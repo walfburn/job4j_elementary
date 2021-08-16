@@ -14,20 +14,17 @@ public class ArithmeticActionsTest {
         assertThat(action, is("added"));
     }
 
-
     @Test
     public void selectActionSubtracted() {
         String action = ArithmeticActions.selectAction(10, 5, 5);
         assertThat(action, is("subtracted"));
     }
 
-
     @Test
     public void selectActionMultiplied() {
         String action = ArithmeticActions.selectAction(15, 5, 3);
         assertThat(action, is("divided"));
     }
-
 
     @Test
     public void selectActionDivided() {
