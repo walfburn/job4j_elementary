@@ -10,12 +10,11 @@ public class ArrayDefinition {
         System.out.println("Размер prices = " + prices.length);
         String[] names = new String[4];
         names[0] = "Vladimir";
-        System.out.println(names[0]);
         names[1] = "Dmitry";
-        System.out.println(names[1]);
         names[2] = "Daria";
-        System.out.println(names[2]);
         names[3] = "Alexander";
-        System.out.println(names[3]);
+        for (String name: names) {
+            System.out.println(name);
+        }
     }
 }
