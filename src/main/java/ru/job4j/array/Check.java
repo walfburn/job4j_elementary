@@ -8,7 +8,6 @@ public class Check {
             if (temp != data[index]) {
                 return false;
             }
-            //result = temp == data[index];
         }
         return result;
     }
