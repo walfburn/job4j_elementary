@@ -44,7 +44,7 @@ public class MatrixCheckTest {
     public void whenHasMonoVerticalTwo() {
         char[][] input = {
                 {' ', ' ', 'X'},
-                {' ', ' ', '2'},
+                {' ', ' ', ' '},
                 {' ', ' ', 'X'},
         };
         int column = 2;
