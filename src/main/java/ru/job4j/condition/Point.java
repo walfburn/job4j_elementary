@@ -12,6 +12,7 @@ public class Point {
     public Point(int first, int second) {
         this.x = first;
         this.y = second;
+
     }
 
     public double distance(Point that) {
