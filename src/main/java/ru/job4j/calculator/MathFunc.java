@@ -12,10 +12,10 @@ public class MathFunc {
     }
 
     public static void main(String[] args) {
-        int result1 = MathFunc.func1(3);
-        int result2 = MathFunc.func2(5);
-        int result3 = MathFunc.func1(100);
-        System.out.println(result1 + result2);
-        System.out.println(result3);
+        int resultFirst = MathFunc.func1(3);
+        int resultSecond = MathFunc.func2(5);
+        int resultThird = MathFunc.func1(100);
+        System.out.println(resultFirst + resultSecond);
+        System.out.println(resultThird);
     }
 }

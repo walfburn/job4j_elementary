@@ -3,19 +3,19 @@ package ru.job4j.condition;
 public class DummyBot {
 
     public static String answer(String questions) {
-        String rls = "Это ставит меня в тупик. Задайте другой вопрос.";
+        String result = "Это ставит меня в тупик. Задайте другой вопрос.";
         if ("Привет, Бот.".equals(questions)) {
-            rls = "Привет, умник.";
+            result = "Привет, умник.";
         } else if ("Пока.".equals(questions)) {
-            rls = "До скорой встречи.";
+            result = "До скорой встречи.";
         }
-        return rls;
+        return result;
     }
 
     public static void main(String[] args) {
-        String rls = DummyBot.answer("Привет, Бот.");
-        System.out.println(rls);
-        rls = DummyBot.answer("Пока.");
-        System.out.println(rls);
+        String result = DummyBot.answer("Привет, Бот.");
+        System.out.println(result);
+        result = DummyBot.answer("Пока.");
+        System.out.println(result);
     }
 }
