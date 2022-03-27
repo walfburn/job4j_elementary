@@ -2,6 +2,7 @@ package ru.job4j.condition;
 
 import org.junit.Assert;
 import org.junit.Test;
+import static ru.job4j.condition.Max.*;
 
 public class MaxTest {
 
@@ -32,4 +33,24 @@ public class MaxTest {
         Assert.assertEquals(result, expected);
     }
 
+    @Test
+    public void threeMax() {
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        int expected = 3;
+        int result = Max.max(one, max(two, three));
+        Assert.assertEquals(result, expected);
+    }
+
+    @Test
+    public void fourMax() {
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        int four = 5;
+        int expected = 5;
+        int result = Max.max(one, max(two, three), max(three, four));
+        Assert.assertEquals(result, expected);
+    }
 }

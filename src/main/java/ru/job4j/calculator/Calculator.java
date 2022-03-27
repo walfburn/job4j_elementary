@@ -7,6 +7,14 @@ public class Calculator {
         System.out.println(result);
     }
 
+    public double add(double first, double second) {
+        return first + second;
+    }
+
+    public double add(double first, double second, double third) {
+        return first + add(second, third);
+    }
+
     public static void main(String[] args) {
         Calculator.plus(100, 500);
         Calculator.plus(4, 2);
