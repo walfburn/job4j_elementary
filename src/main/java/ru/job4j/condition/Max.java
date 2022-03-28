@@ -11,7 +11,7 @@ public class Max {
     }
 
     public int max(int one, int two, int three, int four) {
-        return max(one, max(two, three), max(three, four));
+        return max(max(one, two), max(three, four));
     }
 
     public static void main(String[] args) {

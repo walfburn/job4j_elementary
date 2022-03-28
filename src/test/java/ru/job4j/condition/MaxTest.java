@@ -50,7 +50,7 @@ public class MaxTest {
         int three = 3;
         int four = 5;
         int expected = 5;
-        int result = Max.max(one, max(two, three), max(three, four));
+        int result = Max.max(max(one, two), max(three, four));
         Assert.assertEquals(result, expected);
     }
 }
